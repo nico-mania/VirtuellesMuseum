@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: b46c6d9ee79c6844197dc0cbd9d5957d
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: dda12f74ff9116a42b23482252b2c482, type: 3}
+  _instancesCopy:
+  - {fileID: 11400000, guid: e31785edd643cc240843f56bb7c786f9, type: 2}
+  _fileAsset: {instanceID: 0}
+  _assetPath: Assets/Textures/TexturesCom_Wood_ParquetHerringbone9.sbsar

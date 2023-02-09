@@ -4,7 +4,13 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/QuizScene.unity
+    guid: ce81a2a14e713ff4484c543c716cd5c5
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 4917beaaebdaf234890e338f6c28747f, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 9e8ce9a4f298e6843ad0a5cef1a15dd0, type: 2}

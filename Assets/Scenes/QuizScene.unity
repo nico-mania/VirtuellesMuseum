@@ -174,27 +174,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   QnA:
-  - Question: Wie alt ist Nico?
+  - Question: "Wer malte dieses Gem\xE4lde?"
+    Painting: {fileID: 21300000, guid: bbf5d49aa307a7f4f99a8f6b3f63400a, type: 3}
     Answers:
-    - 13
-    - 24
-    - 56
-    - 29
+    - Casper David Friedrich
+    - Claude Monet
+    - Jan Vermeer van Delft
+    - Rembrandt van Rijn
     correctAnswer: 4
-  - Question: Im wie vielten Semester ist Nico?
+  - Question: "Aus welcher Kunstepoche stammt dieses Gem\xE4lde?"
+    Painting: {fileID: 21300000, guid: 4dd8146d268baa84090dcf58f4fcf5f2, type: 3}
     Answers:
-    - 3
-    - 7
-    - 1
-    - 5
+    - Renaissance
+    - Impressionismus
+    - Klassismus
+    - Rokoko
     correctAnswer: 2
-  - Question: 4+7=
+  - Question: "Von wann bis wann ging ungef\xE4hr die Epoche des Expressionismus
+      in der Malerei."
+    Painting: {fileID: 21300000, guid: 584a92a045aa2a94586b94d6dcc47181, type: 3}
     Answers:
-    - 1
-    - 2
-    - 55
-    - 11
-    correctAnswer: 4
+    - ca. 1880 - 1910
+    - ca. 1770 - 1840
+    - ca. 1905 - 1925
+    - ca. 1918 - 1933
+    correctAnswer: 3
   options:
   - {fileID: 1014035028}
   - {fileID: 918377729}
@@ -206,6 +210,7 @@ MonoBehaviour:
   RetryButton: {fileID: 1925519234}
   QuestionText: {fileID: 1170703086}
   quizScore: {fileID: 542897189}
+  Painting: {fileID: 1827997859}
 --- !u!4 &770652625
 Transform:
   m_ObjectHideFlags: 0
@@ -252,6 +257,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1827997859 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7729720786926728740, guid: a5af3062762e07d4696a269f7586c232, type: 3}
+  m_PrefabInstance: {fileID: 7681652747683044282}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1925519234 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8233300241754307545, guid: a5af3062762e07d4696a269f7586c232, type: 3}
@@ -286,6 +302,22 @@ PrefabInstance:
       propertyPath: quizManager
       value: 
       objectReference: {fileID: 770652624}
+    - target: {fileID: 7681652747712059403, guid: a5af3062762e07d4696a269f7586c232, type: 3}
+      propertyPath: m_Name
+      value: AnswerA
+      objectReference: {fileID: 0}
+    - target: {fileID: 7681652747855202311, guid: a5af3062762e07d4696a269f7586c232, type: 3}
+      propertyPath: m_Name
+      value: AnswerD
+      objectReference: {fileID: 0}
+    - target: {fileID: 7681652748634847734, guid: a5af3062762e07d4696a269f7586c232, type: 3}
+      propertyPath: m_Name
+      value: AnswerB
+      objectReference: {fileID: 0}
+    - target: {fileID: 7681652749015283183, guid: a5af3062762e07d4696a269f7586c232, type: 3}
+      propertyPath: m_Name
+      value: QuestionText
+      objectReference: {fileID: 0}
     - target: {fileID: 7681652749029747499, guid: a5af3062762e07d4696a269f7586c232, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -373,6 +405,70 @@ PrefabInstance:
     - target: {fileID: 7681652749029747510, guid: a5af3062762e07d4696a269f7586c232, type: 3}
       propertyPath: m_Name
       value: QuizCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 7681652749046804101, guid: a5af3062762e07d4696a269f7586c232, type: 3}
+      propertyPath: m_Name
+      value: AnswerC
+      objectReference: {fileID: 0}
+    - target: {fileID: 7729720786926728740, guid: a5af3062762e07d4696a269f7586c232, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 584a92a045aa2a94586b94d6dcc47181, type: 3}
+    - target: {fileID: 7729720786926728740, guid: a5af3062762e07d4696a269f7586c232, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7729720786926728740, guid: a5af3062762e07d4696a269f7586c232, type: 3}
+      propertyPath: m_UseSpriteMesh
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7729720786926728740, guid: a5af3062762e07d4696a269f7586c232, type: 3}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7951707992156603458, guid: a5af3062762e07d4696a269f7586c232, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7951707992156603458, guid: a5af3062762e07d4696a269f7586c232, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7951707992156603458, guid: a5af3062762e07d4696a269f7586c232, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7951707992156603458, guid: a5af3062762e07d4696a269f7586c232, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7951707992156603458, guid: a5af3062762e07d4696a269f7586c232, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 144
+      objectReference: {fileID: 0}
+    - target: {fileID: 7951707992156603458, guid: a5af3062762e07d4696a269f7586c232, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 147
+      objectReference: {fileID: 0}
+    - target: {fileID: 7951707992156603458, guid: a5af3062762e07d4696a269f7586c232, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 7951707992156603458, guid: a5af3062762e07d4696a269f7586c232, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7951707992156603458, guid: a5af3062762e07d4696a269f7586c232, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7951707992156603458, guid: a5af3062762e07d4696a269f7586c232, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.0000019073486
+      objectReference: {fileID: 0}
+    - target: {fileID: 7951707992156603458, guid: a5af3062762e07d4696a269f7586c232, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -10.500002
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5af3062762e07d4696a269f7586c232, type: 3}

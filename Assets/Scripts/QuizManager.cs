@@ -18,6 +18,7 @@ public class QuizManager : MonoBehaviour
     [SerializeField] private Button RetryButton;
     [SerializeField] private TMP_Text QuestionText;
     [SerializeField] private TMP_Text quizScore;
+    [SerializeField] private Image Painting;
     
     private int totalQuestions = 0;
     private int rightAnswers = 0;
@@ -90,6 +91,7 @@ public class QuizManager : MonoBehaviour
             currentQuestion = UnityEngine.Random.Range(0, QnA.Count);
 
             QuestionText.text = QnA[currentQuestion].Question;
+            Painting.sprite = QnA[currentQuestion].Painting;
             SetAnswers();
         }
         else

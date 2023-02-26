@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 523225582bb790046a19204307104da7
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: dda12f74ff9116a42b23482252b2c482, type: 3}
+  _instancesCopy:
+  - {fileID: 11400000, guid: 1230d5d509496f048bc00a4a240a255b, type: 2}
+  _fileAsset: {instanceID: 0}
+  _assetPath: Assets/Textures/concrete_raw_grey.sbsar

@@ -19,9 +19,10 @@ public class QuizManager : MonoBehaviour
     [SerializeField] private TMP_Text QuestionText;
     [SerializeField] private TMP_Text quizScore;
     [SerializeField] private Image Painting;
-    
-    private int totalQuestions = 0;
-    private int rightAnswers = 0;
+
+    public static int spawnint = 0; //determines which level of reward is given
+    private float totalQuestions = 0;
+    private float rightAnswers = 0;
 
     private void Start()
     {
@@ -40,6 +41,23 @@ public class QuizManager : MonoBehaviour
         QuizPanel.SetActive(false);
         RetryPanel.SetActive(true);
         quizScore.text = rightAnswers + "/" + totalQuestions;
+        if (rightAnswers/totalQuestions == 1.0f)
+        {
+            spawnint = 3;
+        }
+        else if (rightAnswers/totalQuestions >= 0.8f)
+        {
+            spawnint = 2;
+        }
+        else if (rightAnswers/totalQuestions >= 0.5f)
+        {
+            spawnint = 1;
+        }
+        else if (rightAnswers/totalQuestions < 0.5f)
+        {
+            spawnint = 0;
+        }
+        Debug.Log("Spawnint = " + spawnint);
     }
 
     public void Retry()

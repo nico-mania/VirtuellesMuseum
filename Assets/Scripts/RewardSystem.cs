@@ -5,11 +5,15 @@ using UnityEngine;
 public class RewardSystem : MonoBehaviour
 {
     [SerializeField] private Material whiteMat, bronzeMat, silverMat, goldMat;
+
+    [SerializeField] private GameObject whiteSkin, bronzeSkin, silverSkin, goldSkin;
     
     [SerializeField] private GameObject leftHand;
     private Renderer leftHandRenderer;
     [SerializeField] private GameObject rightHand;
     private Renderer rightHandRenderer;
+
+    //public QuizManager QuizManager;
     void Start()
     {
         leftHandRenderer = leftHand.GetComponent<Renderer>();
@@ -19,7 +23,25 @@ public class RewardSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (QuizManager.spawnint == 3)
+        {
+            goldSkin.SetActive(true);
+            silverSkin.SetActive(true);
+            bronzeSkin.SetActive(true);
+        }
+        else if (QuizManager.spawnint == 2)
+        {
+            silverSkin.SetActive(true);
+            bronzeSkin.SetActive(true);
+        }
+        else if (QuizManager.spawnint == 1)
+        {
+            bronzeSkin.SetActive(true);
+        }
+        else if (QuizManager.spawnint == 0)
+        {
+            whiteSkin.SetActive(true);
+        }
     }
 
     public void ChangeMaterialWhite()

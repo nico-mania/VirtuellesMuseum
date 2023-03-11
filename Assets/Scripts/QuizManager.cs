@@ -17,12 +17,13 @@ public class QuizManager : MonoBehaviour
     [SerializeField] private GameObject RetryPanel;
     [SerializeField] private Button RetryButton;
     [SerializeField] private TMP_Text QuestionText;
-    [SerializeField] private TMP_Text quizScore;
+    [SerializeField] private TMP_Text answerProgress, quizScore;
     [SerializeField] private Image Painting;
 
     public static int spawnint = 0; //determines which level of reward is given
     private float totalQuestions = 0;
     private float rightAnswers = 0;
+    private float currentAnswer = 0;
 
     private void Start()
     {
@@ -45,7 +46,7 @@ public class QuizManager : MonoBehaviour
         {
             spawnint = 3;
         }
-        else if (rightAnswers/totalQuestions >= 0.8f)
+        else if (rightAnswers/totalQuestions >= 0.75f)
         {
             spawnint = 2;
         }
@@ -53,16 +54,14 @@ public class QuizManager : MonoBehaviour
         {
             spawnint = 1;
         }
-        else if (rightAnswers/totalQuestions < 0.5f)
+        else
         {
             spawnint = 0;
         }
-        Debug.Log("Spawnint = " + spawnint);
     }
 
     public void Retry()
     {
-        Debug.Log("Retry");
         QuizPanel.SetActive(true);
         RetryPanel.SetActive(false);
         SceneManager.UnloadSceneAsync("QuizScene");
@@ -111,10 +110,11 @@ public class QuizManager : MonoBehaviour
             QuestionText.text = QnA[currentQuestion].Question;
             Painting.sprite = QnA[currentQuestion].Painting;
             SetAnswers();
+            currentAnswer++;
+            answerProgress.text = currentAnswer + "/" + totalQuestions;
         }
         else
         {
-            Debug.Log("Out of Questions.");
             GameOver();
         }
     }

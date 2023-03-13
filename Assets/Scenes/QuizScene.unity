@@ -196,7 +196,7 @@ MonoBehaviour:
     - Gothic
     correctAnswer: 2
   - Question: "Von wann bis wann ging ungef\xE4hr die Epoche des Expressionismus
-      in der Malerei."
+      in der Malerei?"
     Painting: {fileID: 21300000, guid: 584a92a045aa2a94586b94d6dcc47181, type: 3}
     Answers:
     - ca. 1140 - 1500
@@ -204,7 +204,7 @@ MonoBehaviour:
     - ca. 1770 - 1840
     - ca. 1905 - 1925
     correctAnswer: 4
-  - Question: "Von wann bis wann ging ungef\xE4hr die Epoche der Gothik in der Malerei."
+  - Question: "Von wann bis wann ging ungef\xE4hr die Epoche der Gothik in der Malerei?"
     Painting: {fileID: 21300000, guid: 584a92a045aa2a94586b94d6dcc47181, type: 3}
     Answers:
     - ca. 1140 - 1500
@@ -213,7 +213,7 @@ MonoBehaviour:
     - ca. 1905 - 1925
     correctAnswer: 1
   - Question: "Von wann bis wann ging ungef\xE4hr die Epoche des Klassizismus in
-      der Malerei."
+      der Malerei?"
     Painting: {fileID: 21300000, guid: 584a92a045aa2a94586b94d6dcc47181, type: 3}
     Answers:
     - ca. 1140 - 1500
@@ -222,7 +222,7 @@ MonoBehaviour:
     - ca. 1905 - 1925
     correctAnswer: 3
   - Question: "Von wann bis wann ging ungef\xE4hr die Epoche des Renaissance in der
-      Malerei."
+      Malerei?"
     Painting: {fileID: 21300000, guid: 584a92a045aa2a94586b94d6dcc47181, type: 3}
     Answers:
     - ca. 1140 - 1500
@@ -258,7 +258,7 @@ MonoBehaviour:
     Painting: {fileID: 21300000, guid: 8e4086086e0d06d49a2a696c3108510c, type: 3}
     Answers:
     - Barock
-    - Gothic
+    - Gothik
     - Realismus
     - Impressionismus
     correctAnswer: 1
@@ -274,7 +274,7 @@ MonoBehaviour:
     Painting: {fileID: 21300000, guid: 4c26619878e5025438c02928b96af527, type: 3}
     Answers:
     - Renaissance
-    - Gothic
+    - Gothik
     - Realismus
     - Rokoko
     correctAnswer: 4
@@ -369,7 +369,7 @@ MonoBehaviour:
   - Question: Aus welcher Epoche stammen die Malereien von Leonardo da Vinci?
     Painting: {fileID: 21300000, guid: 584a92a045aa2a94586b94d6dcc47181, type: 3}
     Answers:
-    - Romatik
+    - Romantik
     - Jugendstil
     - Barock
     - Renaissance
@@ -377,7 +377,7 @@ MonoBehaviour:
   - Question: Aus welcher Epoche stammen die Malereien von Casper David Friedrich?
     Painting: {fileID: 21300000, guid: 584a92a045aa2a94586b94d6dcc47181, type: 3}
     Answers:
-    - Romatik
+    - Romantik
     - Jugendstil
     - Barock
     - Renaissance
@@ -642,8 +642,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -1832598991697404074, guid: 7c9fa390d0514eb48a2232d68c469753, type: 2}
     - target: {fileID: 7681652747416256521, guid: a5af3062762e07d4696a269f7586c232, type: 3}
+      propertyPath: m_text
+      value: Impressionismus
+      objectReference: {fileID: 0}
+    - target: {fileID: 7681652747416256521, guid: a5af3062762e07d4696a269f7586c232, type: 3}
       propertyPath: m_fontSize
-      value: 1
+      value: 0.91
       objectReference: {fileID: 0}
     - target: {fileID: 7681652747416256521, guid: a5af3062762e07d4696a269f7586c232, type: 3}
       propertyPath: m_fontAsset
@@ -663,7 +667,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7681652747416256521, guid: a5af3062762e07d4696a269f7586c232, type: 3}
       propertyPath: m_fontSizeBase
-      value: 1
+      value: 0.91
       objectReference: {fileID: 0}
     - target: {fileID: 7681652747416256521, guid: a5af3062762e07d4696a269f7586c232, type: 3}
       propertyPath: m_sharedMaterial
@@ -830,8 +834,12 @@ PrefabInstance:
       value: 0.8018868
       objectReference: {fileID: 0}
     - target: {fileID: 7681652748066641282, guid: a5af3062762e07d4696a269f7586c232, type: 3}
+      propertyPath: m_text
+      value: Impressionismus
+      objectReference: {fileID: 0}
+    - target: {fileID: 7681652748066641282, guid: a5af3062762e07d4696a269f7586c232, type: 3}
       propertyPath: m_fontSize
-      value: 1
+      value: 0.91
       objectReference: {fileID: 0}
     - target: {fileID: 7681652748066641282, guid: a5af3062762e07d4696a269f7586c232, type: 3}
       propertyPath: m_fontAsset
@@ -851,7 +859,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7681652748066641282, guid: a5af3062762e07d4696a269f7586c232, type: 3}
       propertyPath: m_fontSizeBase
-      value: 1
+      value: 0.91
       objectReference: {fileID: 0}
     - target: {fileID: 7681652748066641282, guid: a5af3062762e07d4696a269f7586c232, type: 3}
       propertyPath: m_sharedMaterial
@@ -862,8 +870,12 @@ PrefabInstance:
       value: 4278190080
       objectReference: {fileID: 0}
     - target: {fileID: 7681652748388774649, guid: a5af3062762e07d4696a269f7586c232, type: 3}
+      propertyPath: m_text
+      value: Impressionismus
+      objectReference: {fileID: 0}
+    - target: {fileID: 7681652748388774649, guid: a5af3062762e07d4696a269f7586c232, type: 3}
       propertyPath: m_fontSize
-      value: 1
+      value: 0.91
       objectReference: {fileID: 0}
     - target: {fileID: 7681652748388774649, guid: a5af3062762e07d4696a269f7586c232, type: 3}
       propertyPath: m_fontAsset
@@ -883,7 +895,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7681652748388774649, guid: a5af3062762e07d4696a269f7586c232, type: 3}
       propertyPath: m_fontSizeBase
-      value: 1
+      value: 0.91
       objectReference: {fileID: 0}
     - target: {fileID: 7681652748388774649, guid: a5af3062762e07d4696a269f7586c232, type: 3}
       propertyPath: m_sharedMaterial
@@ -1118,8 +1130,12 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7681652749062993705, guid: a5af3062762e07d4696a269f7586c232, type: 3}
+      propertyPath: m_text
+      value: Impressionismus
+      objectReference: {fileID: 0}
+    - target: {fileID: 7681652749062993705, guid: a5af3062762e07d4696a269f7586c232, type: 3}
       propertyPath: m_fontSize
-      value: 1
+      value: 0.91
       objectReference: {fileID: 0}
     - target: {fileID: 7681652749062993705, guid: a5af3062762e07d4696a269f7586c232, type: 3}
       propertyPath: m_fontAsset
@@ -1139,7 +1155,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7681652749062993705, guid: a5af3062762e07d4696a269f7586c232, type: 3}
       propertyPath: m_fontSizeBase
-      value: 1
+      value: 0.91
       objectReference: {fileID: 0}
     - target: {fileID: 7681652749062993705, guid: a5af3062762e07d4696a269f7586c232, type: 3}
       propertyPath: m_sharedMaterial

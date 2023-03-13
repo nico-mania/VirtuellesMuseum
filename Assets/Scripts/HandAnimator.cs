@@ -9,8 +9,7 @@ public class HandAnimator : MonoBehaviour
     public InputActionProperty gripAnimation;
 
     [SerializeField] private Animator handAnimator;
-
-    // Update is called once per frame
+    
     void Update()
     {
         float triggerValue = pinchAnimation.action.ReadValue<float>();

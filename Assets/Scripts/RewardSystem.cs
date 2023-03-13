@@ -10,6 +10,7 @@ public class RewardSystem : MonoBehaviour
     
     [SerializeField] private GameObject leftHand;
     private Renderer leftHandRenderer;
+    
     [SerializeField] private GameObject rightHand;
     private Renderer rightHandRenderer;
 
@@ -38,7 +39,7 @@ public class RewardSystem : MonoBehaviour
         {
             bronzeSkin.SetActive(true);
         }
-        else if (QuizManager.spawnint == 0)
+        else
         {
             whiteSkin.SetActive(true);
         }

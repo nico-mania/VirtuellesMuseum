@@ -2,6 +2,7 @@ using UnityEngine;
 
 [System.Serializable]
 
+//Script for storing different types of data for the quiz
 public class QuestionsAndAnswers
 {
    public string Question;

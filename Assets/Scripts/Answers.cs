@@ -10,24 +10,24 @@ public class Answers : MonoBehaviour
    public QuizManager quizManager;
 
    [SerializeField] public Color startColor;
+   private Color correctColor = new Color(0.3055802f, 0.5943396f, 0.3055802f, 1f);
+   private Color falseColor = new Color(0.5943396f, 0.3055802f, 0.3055802f, 1f);
 
    private void Start()
    {
-      startColor = GetComponent<RawImage>().color;
+      startColor = GetComponent<RawImage>().color;// = new Color(0.1180135f, 0.1418782f, 0.6415094f, 1f);
    }
 
    public void Answer()
    {
       if (isCorrect)
       {
-         GetComponent<RawImage>().color = new Color(0.3055802f, 0.5943396f, 0.3055802f, 1f);
-         Debug.Log("Correct");
+         GetComponent<RawImage>().color = correctColor;
          quizManager.CorrectAnswer();
       }
       else
       {
-         GetComponent<RawImage>().color = new Color(0.5943396f, 0.3055802f, 0.3055802f, 1f);
-         Debug.Log("Wrong");
+         GetComponent<RawImage>().color = falseColor;
          quizManager.WrongAnswer();
       }
    }

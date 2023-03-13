@@ -30,11 +30,6 @@ public class QuizManager : MonoBehaviour
         totalQuestions = QnA.Count;
         NextQuestion();
         RetryButton.onClick.AddListener(Retry);
-        //fixt momentan fehler indem die buttons nach scenen neustart nicht wieder weiß werden
-        for (int i = 0; i < options.Length; i++)
-        {
-            options[i].GetComponent<RawImage>().color =  Color.white;
-        }
     }
 
     private void GameOver()
@@ -105,6 +100,7 @@ public class QuizManager : MonoBehaviour
     {
         if (QnA.Count > 0)
         {
+            //chooses a random next question out of QnA List
             currentQuestion = UnityEngine.Random.Range(0, QnA.Count);
 
             QuestionText.text = QnA[currentQuestion].Question;

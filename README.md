@@ -12,7 +12,7 @@ Das Museum ist frei erkundbar. Es wird jedoch empfohlen, das Quiz vor und nach d
 
 ## Screenshots
 
-<img src="https://user-images.githubusercontent.com/55563178/226988826-e0c1cc27-c0b7-4dd7-8d20-e46f7db05b70.png" width="800">
+<img src="https://user-images.githubusercontent.com/55563178/226992809-85d354a7-dc8d-466c-8a92-70fc656623d9.png" width="800">
 
 <img src="https://user-images.githubusercontent.com/55563178/226988999-d62e5b9e-8ec3-4c6b-88bf-fd6aebc023b0.png" width="800">
 

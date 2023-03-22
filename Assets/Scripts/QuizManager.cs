@@ -32,35 +32,14 @@ public class QuizManager : MonoBehaviour
         RetryButton.onClick.AddListener(Retry);
     }
 
-    private void GameOver()
-    {
-        QuizPanel.SetActive(false);
-        RetryPanel.SetActive(true);
-        quizScore.text = rightAnswers + "/" + totalQuestions;
-        if (rightAnswers/totalQuestions == 1.0f)
-        {
-            spawnint = 3;
-        }
-        else if (rightAnswers/totalQuestions >= 0.75f)
-        {
-            spawnint = 2;
-        }
-        else if (rightAnswers/totalQuestions >= 0.5f)
-        {
-            spawnint = 1;
-        }
-        else
-        {
-            spawnint = 0;
-        }
-    }
-
     public void Retry()
     {
         QuizPanel.SetActive(true);
         RetryPanel.SetActive(false);
-        SceneManager.UnloadSceneAsync("QuizScene");
-        SceneManager.LoadScene("QuizScene", LoadSceneMode.Additive);
+        
+        //reload quizscene
+        SceneManager.UnloadSceneAsync(1); 
+        SceneManager.LoadScene(1, LoadSceneMode.Additive);
     }
     
     public void CorrectAnswer()
@@ -112,6 +91,29 @@ public class QuizManager : MonoBehaviour
         else
         {
             GameOver();
+        }
+    }
+    
+    private void GameOver()
+    {
+        QuizPanel.SetActive(false);
+        RetryPanel.SetActive(true);
+        quizScore.text = rightAnswers + "/" + totalQuestions;
+        float percentage = rightAnswers / totalQuestions;
+        switch (percentage)
+        {
+            case 1.0f:
+                spawnint = 3;
+                break;
+            case var p when p >= 0.75f:
+                spawnint = 2;
+                break;
+            case var p when p >= 0.5f:
+                spawnint = 1;
+                break;
+            default:
+                spawnint = 0;
+                break;
         }
     }
 }

@@ -15,7 +15,7 @@ public class Answers : MonoBehaviour
 
    private void Start()
    {
-      startColor = GetComponent<RawImage>().color;// = new Color(0.1180135f, 0.1418782f, 0.6415094f, 1f);
+      startColor = GetComponent<RawImage>().color;
    }
 
    public void Answer()

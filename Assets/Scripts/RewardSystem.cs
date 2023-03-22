@@ -10,38 +10,35 @@ public class RewardSystem : MonoBehaviour
     
     [SerializeField] private GameObject leftHand;
     private Renderer leftHandRenderer;
-    
     [SerializeField] private GameObject rightHand;
     private Renderer rightHandRenderer;
-
-    //public QuizManager QuizManager;
+    
     void Start()
     {
         leftHandRenderer = leftHand.GetComponent<Renderer>();
         rightHandRenderer = rightHand.GetComponent<Renderer>();
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
-        if (QuizManager.spawnint == 3)
+        //spawns new skin based on spawnint
+        switch (QuizManager.spawnint)
         {
-            goldSkin.SetActive(true);
-            silverSkin.SetActive(true);
-            bronzeSkin.SetActive(true);
-        }
-        else if (QuizManager.spawnint == 2)
-        {
-            silverSkin.SetActive(true);
-            bronzeSkin.SetActive(true);
-        }
-        else if (QuizManager.spawnint == 1)
-        {
-            bronzeSkin.SetActive(true);
-        }
-        else
-        {
-            whiteSkin.SetActive(true);
+            case 3:
+                goldSkin.SetActive(true);
+                silverSkin.SetActive(true);
+                bronzeSkin.SetActive(true);
+                break;
+            case 2:
+                silverSkin.SetActive(true);
+                bronzeSkin.SetActive(true);
+                break;
+            case 1:
+                bronzeSkin.SetActive(true);
+                break;
+            default:
+                whiteSkin.SetActive(true);
+                break;
         }
     }
 
